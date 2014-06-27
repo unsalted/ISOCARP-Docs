@@ -1,0 +1,1052 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<title>Content</title>
+
+</head>
+<body>
+<h2>Content</h2>
+
+<h4>General</h4>
+
+<ul>
+<li><a href="#loginpanelg">How do I log into the panel/ back end?</a></li>
+<li><p><a href="#directoryg">How do I find my way in the directory?</a></p></li>
+<li><p><a href="#navigatepanelg">How do I navigate in the panel?</a></p></li>
+<li><a href="#whattochangeg">What can I change?</a></li>
+<li><a href="#whichcontentg">How do I know which content to fill in where?</a></li>
+<li><a href="#changecontentg">How can I change content on the main page?</a></li>
+<li><a href="#addthemeg">How can I add a theme?</a></li>
+<li><a href="#typeg">Do i have to define type sizes and fonts?</a></li>
+</ul>
+
+
+<h4>Basic Rules</h4>
+
+<ul>
+<li><a href="#basicrulesg">basic rules</a></li>
+</ul>
+
+
+<h4>Talking Points</h4>
+
+<ul>
+<li><a href="#createtp">How do I create a new talking point?</a></li>
+<li><a href="#addfilestp">How do I add files to a talking point (document, pictures)?</a></li>
+<li><a href="#whichfilestp">Which sort of files can i upload?</a></li>
+<li><a href="#editfilestp">How can I rename, replace or delete files?</a></li>
+<li><a href="#slideshowtp">How do I create a slideshow in a talking point?</a></li>
+<li><a href="#tipsslideshowtp">Tips for creating a slideshow</a></li>
+<li><a href="#embedvideovimeotp">How do I embed a video into a talking point? (Vimeo)</a></li>
+<li><a href="#embedvideoyoutubetp">How do I embed a video into a talking point? (Youtube)</a></li>
+<li><a href="#whattouploadtp">What can I upload?</a></li>
+<li><a href="#previewtp">Can I preview my talking point before other people see it?</a></li>
+<li><a href="#makevisibletp">How to make my talking point visible on the webpage?</a></li>
+<li><a href="#ordertp">How to change the order of talking points on the webpage?</a></li>
+<li><a href="#deletetp">How can I delete a talking point?</a></li>
+</ul>
+
+
+<h4>Text Styling</h4>
+
+<ul>
+<li><a href="#stylizetexts">How do I stylize text (header, bold, italic)?</a></li>
+<li><p><a href="#addhyperlinks">How do I add a hyperlink?</a></p></li>
+<li><p><a href="#addemaillinks">How do I add a email link?</a></p></li>
+</ul>
+
+
+<h4>Contributions</h4>
+
+<ul>
+<li><a href="#createcp">How do i create a contribution page?</a></li>
+<li><a href="#uploadcontributioncp">How do I upload a contribution to a contribution page?</a></li>
+<li><a href="#whattouploadcp">What can I upload?</a></li>
+<li><a href="#editcontributionscp">How can I rename, replace or delete contributions?</a></li>
+<li><a href="#previewcp">Can I preview contribution pages before other people see it?</a></li>
+<li><a href="#makevisiblecp">How to make a contribution page visible on the webpage?</a></li>
+<li><a href="#ordercp">How to change the order of contribution pages on the webpage?</a></li>
+<li><a href="#deletecp">How can I delete a contribution page?</a></li>
+</ul>
+
+
+<h4>Calendar</h4>
+
+<ul>
+<li><a href="#addeventca">How do I add an event to the calendar?</a></li>
+<li><a href="#structureca">What is the structure of the calendar?</a></li>
+</ul>
+
+
+<h4>Who will be there?</h4>
+
+<ul>
+<li><a href="#whowillbethere">How does the “Who will be there?” section work?</a></li>
+</ul>
+
+
+<h4>About</h4>
+
+<ul>
+<li><a href="#createas">How do I create an about section?</a></li>
+<li><a href="#addpicturesas">Can I add pictures to the about sections?</a></li>
+</ul>
+
+
+<h4>Vocabulary:</h4>
+
+<ul>
+<li><a href="#backend">backend</a></li>
+<li><a href="#masteradministrator">master administrator</a></li>
+<li><a href="#themeadministrator">theme administrator</a></li>
+<li><a href="#directory">directory</a></li>
+<li><a href="#panel">panel</a></li>
+<li><a href="#article">article</a></li>
+<li><a href="#hyperlink">hyperlink</a></li>
+<li><a href="#talkingpoint">talking point</a></li>
+<li><a href="#contribution">contribution</a></li>
+<li><a href="#excerpt">excerpt</a></li>
+<li><a href="#subpages">visible/ invisible subpages</a></li>
+<li><a href="#foldoutmenu">fold out menu</a></li>
+<li><a href="#popupwindow">pop-up window</a></li>
+<li><a href="#embedlink">embed-link</a></li>
+<li><a href="#link">link</a></li>
+</ul>
+
+
+<h2>General</h2>
+
+<h3>How do I log into the backend? <a name="loginpanelg"></a></h3>
+
+<ul>
+<li>go to the ISOCARP 2015 webpage (isocarp2015.org)</li>
+<li>behind the webpage name (URL) in the address bar you type: <em>/panel</em>
+(visual)</li>
+<li>hit enter</li>
+<li>you will see a window asking you for your username and password</li>
+<li>fill in the username and password you got from the main administrator</li>
+<li>hit enter or press the <strong>“Login”</strong> button</li>
+<li>you are now logged in to the panel/ back end</li>
+</ul>
+
+
+<h3>How do I find my way in the directory? How do I navigate in the panel? <a name="directoryg"></a></h3>
+
+<ul>
+<li>on the left side of the panel, in the black area you find the directory</li>
+<li>here you can find your way to the the sections of the webpage you want to change</li>
+<li>the structure is directly related to the structure of the webpage</li>
+<li>see it as a folders (just like on the computer) which contain and organize the content of the webpage</li>
+<li>you can go back in the structure with hitting the <strong>back arrow</strong> on top of the directory (visual)</li>
+<li>you can also navigate by clicking the directory names on top of every page divided by small arrows. They show in which folder you are currently in</li>
+</ul>
+
+
+<p><strong>TIP: don’t worry about the hidden pages by now, they are further explained <a href="//">here</a></strong></p>
+
+<h3>How can I change content? <a name="changecontentg"></a></h3>
+
+<ul>
+<li>find the right section in the directory that you want to change <strong>(see page: <a href="//">How to find your way in the directory</a>)</strong></li>
+<li>you can work on the content like in any other text editor</li>
+<li>type or copy/ paste text from the panel or any external program</li>
+<li>hit the <strong>“Safe”</strong> button at the bottom of the page</li>
+<li>the changes of the content are visible on the webpage now</li>
+</ul>
+
+
+<h3>What can I change? <a name="whattochangeg"></a></h3>
+
+<ul>
+<li>basically all content is editable</li>
+<li>yet there is content with different accessibilities</li>
+<li>the content on the main page can only be changed by the main administrator (Tom).</li>
+<li>for editing menu items please contact the main administrator (Tom).</li>
+<li>for adding a theme please contact the main administrator (Tom).</li>
+<li>for changing the wording of buttons please contact the main administrator (Tom).</li>
+</ul>
+
+
+<h3>How do I know which content to fill in where? <a name="whichcontentg"></a></h3>
+
+<ul>
+<li>there are different text fields in most sections</li>
+<li>they have titles according to the sort of information you have to fill in (title/ text/ description/ excerpt)</li>
+<li>some text fields have also small specifications underneath them to clarify the kind or the length of the text which is to be filled in</li>
+</ul>
+
+
+<h3>How can I change content on the main page? <a name="changecontentg"></a></h3>
+
+<ul>
+<li>the content on the main page can only be changed by the main administrator (Tom)</li>
+<li>please contact Tom if you have any remarks</li>
+</ul>
+
+
+<h3>How can I add a theme? <a name="addthemeg"></a></h3>
+
+<ul>
+<li>themes can only be added by the main administrator (Tom)</li>
+<li>please contact Tom if you want to add a theme</li>
+</ul>
+
+
+<h3>Do i have to define type sizes and fonts? <a name="typeg"></a></h3>
+
+<ul>
+<li>no</li>
+<li>you don’t have to make any decisions about the type size or the font</li>
+<li>the program is formatting all text automatically, according to the section the content is filled in</li>
+<li>also when you copy text from other programs, it will make no difference in which type size or font the original text is formated in</li>
+</ul>
+
+
+<p><strong>TIP: you can easily style text (header/ bold/ italic) for an explanation, please click <a href="//">here</a></strong></p>
+
+<h3>Basic Rules <a name="basicrulesg"></a></h3>
+
+<ul>
+<li>don’t delete anything other than talking points, contributions and about sections and only if you have to</li>
+<li>don’t move too much stuff around and only move it if you know what you are moving and why</li>
+<li>don’t move work from other people without asking or permission from the administrators</li>
+</ul>
+
+
+<h2>Talking Points</h2>
+
+<h3>How do I create a new talking point? <a name="createtp"></a></h3>
+
+<ul>
+<li>from the <strong>“Home”</strong> directory</li>
+<li>go to <strong>“Themes”</strong> and pick your theme</li>
+<li>go to <strong>“Talking Points”</strong></li>
+<li>you will see a list of existing talking points in the directory to the left</li>
+<li>hit the <strong>“+”</strong> button right above the list of talking points in the directory on the left</li>
+<li>a little window is opening called <strong>“Add a new page”</strong></li>
+<li>fill in the title of your talking point</li>
+<li>click on the fold out menu under <strong>“Template”</strong> and select <strong>“Article (article)”</strong></li>
+<li>hit <strong>“Save”</strong> to continue</li>
+<li>hit <strong>“Cancel”</strong> to cancel the action</li>
+<li>you will see a page with several text boxes</li>
+<li>fill them in according to the descriptions</li>
+<li>fields which are marked with a <strong>“*”</strong> are necessary to fill in</li>
+<li>hit the <strong>“Save”</strong> button at the end of the page</li>
+<li>the talking point is created now</li>
+</ul>
+
+
+<p><strong>TIP: to see how to preview the talking point you created click <a href="//">here</a></strong></p>
+
+<pre><code>ATTENTION: The talking point you created is not visible on the ISOCARP2105 web page yet. You are only one simple step away. To see how to make the talking point visible on the ISOCARP2105 web page go to page: ...
+</code></pre>
+
+<h3>How do I add files to a talking point (documents, pictures)? <a name="addfilestp"></a></h3>
+
+<ul>
+<li>go to the <strong>“Talking Points”</strong> section in the directory (Home>Theme>Theme Name>Talking Points)</li>
+<li>find the talking point to which you want to add files to in the directory or create a new one</li>
+<li>on top of the page of your talking point you see a menu, listing the points: <strong>“Content”</strong>, <strong>“Files”</strong>, <strong>“URL”</strong></li>
+<li>you are currently on the <strong>“Content”</strong> section of the talking point, <strong>“Content”</strong> is highlighted red</li>
+<li>go to <strong>“Files”</strong></li>
+<li>here you can see files which are uploaded already or a note saying: <strong>“No files so far”</strong> in case there are no files uploaded</li>
+<li>on the right top of the page there is a button saying <strong>“Upload a new file”</strong></li>
+<li>hit the button to upload a new file</li>
+<li>a black pop-up window opens (upload window)</li>
+<li>hit the button <strong>“Choose File”</strong></li>
+<li>another window opens showing the directory of your own computer</li>
+<li>find the file you want to upload in your system</li>
+<li>select the file and hit <strong>“open”</strong> or double click the file to open</li>
+</ul>
+
+
+<pre><code>ATTENTION: you can only select one file at a time
+</code></pre>
+
+<ul>
+<li>you are now back in the upload window</li>
+<li>the name of the file you want to upload is shown in the bar behind the button <strong>“Choose File”</strong></li>
+<li>hit <strong>“Upload”</strong></li>
+<li>the file is now uploaded to the talking point</li>
+<li>it will show automatically on the webpage in case the talking point is visible</li>
+</ul>
+
+
+<pre><code>NOTICE: big files and slow internet connections result in longer loading times. Stay patient. The process should not take longer than 2 minutes.
+</code></pre>
+
+<ul>
+<li>after your file is uploaded you see a little thumbnail of your file at the file page with the file’s name and it’s size</li>
+<li>you can upload pictures (jpg/ png/ …) or documents (word/ PDF/ …)</li>
+</ul>
+
+
+<p><strong>TIP: To see how to create a talking point, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to change or delete files from a talking point, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to preview the talking point you created, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to sort the list of talking points, please click <a href="//">here</a></strong></p>
+
+<h3>Which sort of files can i upload? <a name="whichfilestp"></a></h3>
+
+<ul>
+<li>you can upload pictures (jpg/ png/ …) or documents (word/ PDF/ …)</li>
+</ul>
+
+
+<h3>How can I rename, replace or delete files? <a name="editfilestp"></a></h3>
+
+<ul>
+<li><p>next to the thumbnail of the file you want to change, you see a little black menu with the buttons: <strong>“Edit”</strong>, <strong>“Replace”</strong>, <strong>“Delete”</strong></p></li>
+<li><p>hit <strong>“Edit”</strong> when you want to change the name of your file</p></li>
+<li><p>a window opens in which you can change the name of the file</p></li>
+<li><p>don’t forget to hit <strong>“Save”</strong> in the window in order to apply the change</p></li>
+<li><p>hit <strong>“Replace”</strong> in order to replace a file</p></li>
+<li>a window opens (upload window)</li>
+<li>follow the instructions to replace the file</li>
+<li>the process is similar to uploading a file <strong>(see page: <a href="//">How to upload a file</a>)
+</strong></li>
+<li>hit <strong>“Delete”</strong> in order to delete a file</li>
+<li>a black window opens</li>
+<li>hit <strong>“Delete”</strong> to confirm deleting the file</li>
+<li>hit <strong>“Cancel”</strong> to stop the process</li>
+</ul>
+
+
+<h3>How do i create a slideshow in a talking point? <a name="slideshowtp"></a></h3>
+
+<ul>
+<li>to create a slideshow, please upload several pictures (jpg/ png) to the files section of your talking points</li>
+<li>the slideshow on the web page is generated automatically</li>
+<li>the images are automatically ordered by the alphabet</li>
+<li>the order of images on web page will be the same like the order on the files section of the talking point</li>
+<li>to change the order of images in a slideshow, please rename them according to an alphabetical system (1filename , 2filename, 3filename, … or Afilename, Bfilename, Cfilename, …)</li>
+<li>to change the order of the images</li>
+</ul>
+
+
+<p><strong>TIP: For tips on how to create a good slideshow, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to change the name of a file, please click <a href="//">here</a></strong></p>
+
+<h3>Tips for creating a slideshow <a name="tipsslideshowtp"></a></h3>
+
+<ul>
+<li>all pictures are automatically scaled to the same height in the display on the webpage</li>
+<li>if the pictures you upload are very small or with a low resolution, they will appear pixelated or blurry on the webpage</li>
+<li>it is advisable to upload only pictures with the same orientation to the same slideshow (portrait or landscape) in order to create an even appearance</li>
+<li>don’t upload to many pictures (to reduce loading time of the webpage)</li>
+<li>only upload pictures which are important to support the story of the talking point
+(to reduce loading time of the webpage and to not confuse the viewer)</li>
+</ul>
+
+
+<h3>How do I embed a video into a talking point? (Vimeo) <a name="embedvideovimeotp"></a></h3>
+
+<pre><code>INFO: Adding a video to a talking point works different from uploading files (pictures, documents). For embedding a video into a Talking Point, you need to get an “embed code” from the platform the video is hosted on
+</code></pre>
+
+<ul>
+<li>go to the video page of the video you want to embed (Vimeo)</li>
+<li>click the <strong>“Share”</strong> button (little paper plane) that appears when you hover your mouse over the video player (visualisation)</li>
+<li>in the pop-up window, you'll see a field containing the embed code for the video</li>
+<li>just copy the code</li>
+<li>go back to the panel</li>
+<li>find the talking point to which you want to add a video in the directory or create a new one</li>
+<li>paste the code into the <strong>“Video”</strong> field on the talking point page</li>
+<li>hit <strong>“Save”</strong></li>
+<li>the video is now embedded into you talking point</li>
+</ul>
+
+
+<p><strong>TIP: To see how to upload pictures or documents, please click <a href="//">here</a></strong></p>
+
+<h3>How do I embed a video into a talking point? (Youtube) <a name="embedvideoyoutubetp"></a></h3>
+
+<pre><code>INFO: Adding a video to a talking point works different from uploading files (pictures, documents). For embedding a video into a Talking Point, you need to get an “embed code” from the platform the video is hosted on (Vimeo/ Youtube)
+</code></pre>
+
+<ul>
+<li>go to the video page of the video you want to embed (Youtube)</li>
+<li>click the <strong>“Share”</strong> button under the video (right side, under the “Views”)</li>
+<li>click the <strong>“Embed”</strong> button in the menu that shows up</li>
+<li>copy the code provided in the expanded box</li>
+<li>go back to the panel</li>
+<li>find the talking point to which you want to add a video in the directory or create a new one</li>
+<li>paste the code into the <strong>“Video”</strong> field on the talking point page</li>
+<li>hit <strong>“Save”</strong></li>
+<li>the video is now embedded into you talking point</li>
+</ul>
+
+
+<p><strong>TIP: To see how to upload pictures or documents, please click <a href="//">here</a></strong></p>
+
+<h3>What can I upload? <a name=""></a></h3>
+
+<ul>
+<li>general information</li>
+<li>inspiration</li>
+<li>thematically interesting papers</li>
+<li>relevant world news</li>
+<li>interesting discussions (from comments)</li>
+<li>interesting contributions</li>
+<li>inspirational quotes</li>
+<li>questions</li>
+<li>challenges</li>
+</ul>
+
+
+<h3>Can I preview my talking point before other people see it? <a name=""></a></h3>
+
+<ul>
+<li>it is very simple to preview the changes you have made</li>
+<li>click the little symbol of a magnifying glass on the right top side of the talking point page</li>
+<li>a new tab will open with a preview to the talking point you created</li>
+</ul>
+
+
+<h3>How to make my talking point visible on the ISOCARP2105 web page? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Talking Points”</strong> section in the directory (Home>Theme>Theme Name>Talking Points)</li>
+<li>you will see a list with all existing talking points</li>
+<li>they are separated in “Visible subpages” and “Invisible subpages”</li>
+<li>all talking points in “Visible subpages” are displayed on the ISOCARP2015 web page</li>
+<li>all talking points in “Invisible subpages” can’t be viewed by visitors of the page</li>
+<li>newly created talking points are saved under “Invisible subpages” and are thus not visible</li>
+<li>to make them visible click the “Sort” button on top of the directory</li>
+<li>the icons of the talking points in the directory change to a list symbol and the cursor changes to direction arrows when you hover over them</li>
+<li>simply drag the new talking point into the list of “Visible subpages” to make it visible</li>
+<li>drop it in the position you want your talking point to appear in the list of talking points</li>
+<li>click “Ok” to save the changes</li>
+<li>click “Cancel” if you don’t want the changes to apply</li>
+</ul>
+
+
+<h3>How to change the order of talking points on the webpage? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Talking Points”</strong> section in the directory (Home>Theme>Theme Name>Talking Points)</li>
+<li>you will see a list with all existing talking points</li>
+<li>click the <strong>“Sort”</strong> button on top of the directory</li>
+<li>the icons in front of the talking points in the directory change to a list symbol and the cursor changes to direction arrows when you hover over them</li>
+<li>simply drag the talking points in <strong>“Visible subpages”</strong> into the order you wish for</li>
+<li>click <strong>“Ok”</strong> to save the changes</li>
+<li>click <strong>“Cancel”</strong> if you don’t want the changes to apply</li>
+</ul>
+
+
+<h3>How can I delete a talking point? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Talking Points”</strong> section in the directory (Home>Theme>Theme Name>Talking Points)</li>
+<li>you will see a list with all existing talking points</li>
+<li>in front of every talking point in the list you see a little circle icon with a cross inside</li>
+<li>click the icon of the talking point you wish to delete</li>
+<li>click <strong>“Delete”</strong> in the pop-up window to confirm the action</li>
+<li>click <strong>“Cancel”</strong> to not delete the talking point</li>
+</ul>
+
+
+<h2>Text Styling</h2>
+
+<h3>How do I stylize text (header, bold, italic)? <a name=""></a></h3>
+
+<pre><code>INFO: You can stylise every piece of text (header, bold, italic, link, email) in order to highlight parts or create links. The text style is not immediately visible in the panel though and follows different rules than in usual text editors.
+</code></pre>
+
+<ul>
+<li>on top of every text box you see buttons for the different style options (h1, h2, h3, bold, italic, link and email)</li>
+<li><strong>“h”</strong> stands for header</li>
+<li>you can either mark the text you want to change and hit a style option (visual follows…)</li>
+<li>or you click a style button first, then you will see a place holder text within symbols (*/#, for example: **bold text**)</li>
+<li>simply replace the placeholder text with the text which needs to be styled, without deleting the symbols</li>
+<li>you can also type out the indications for stylised text by hand:</li>
+</ul>
+
+
+<h1># = header 1 (biggest header size)</h1>
+
+<h2>## = header 2 (medium header size)</h2>
+
+<h3>### = header 3 (smallest header size)</h3>
+
+<pre><code>NOTE: Header styles are applied to all words which follow until the next line break. To end a header style insert a line break.
+</code></pre>
+
+<p><em>*…* = italic text</em></p>
+
+<p><strong>**…** = bold text</strong></p>
+
+<p>(link: URL text: ...) = link</p>
+
+<p>(mail: mail address text: ...) > mail</p>
+
+<pre><code>NOTE: Whatever you write behind "text:" appears in your text as link.
+</code></pre>
+
+<p><strong>TIP: Your text won’t appear stylised in the panel. If you want to preview the changes you have made, press the small magnifying glass symbol on the top right of the page you are on.</strong></p>
+
+<h3>How do I add a hyperlink? <a name=""></a></h3>
+
+<ul>
+<li>on top of every text box you see buttons for the different style options (h1, h2, h3, bold, italic, link and email)</li>
+<li>to insert a link click the <strong>“Link”</strong> button</li>
+<li>a small pop-up window opens</li>
+<li>insert the URL of the webpage you want to link to in the <strong>“Link”</strong> text box</li>
+<li>in the <strong>“Link Text”</strong> text bar, fill in the words which should be highlighted as link in the text</li>
+</ul>
+
+
+<p><strong>TIP: You can choose anything to fill in to the “Link Text”. If you are for example linking to www.youtube.com, your link text could be: “Youtube” or “Video” or “Movie Name”</strong></p>
+
+<ul>
+<li>click <strong>“Insert Link”</strong> to create the link</li>
+<li>click <strong>“Cancel”</strong> if you don’t want to create a link</li>
+</ul>
+
+
+<h3>How do I add a email link? <a name=""></a></h3>
+
+<ul>
+<li>on top of every text box you see buttons for the different style options (h1, h2, h3, bold, italic, link and email)</li>
+<li>to insert a link to a mail address click the <strong>“Email”</strong> button</li>
+<li>a small pop-up window opens</li>
+<li>insert the email address you want you want to link to in the <strong>“Email Address”</strong> text box</li>
+<li>in the <strong>“Link Text”</strong> text bar, fill in the words which should be highlighted as mail-link in the text</li>
+</ul>
+
+
+<p><strong>TIP: You can choose anything to fill in to the “Link Text”. If you are for example linking to the mail address of a member, your link text could be: “Contact” or “Name of the member"</strong></p>
+
+<ul>
+<li>click <strong>“Insert Link”</strong> to create the link</li>
+<li>click <strong>“Cancel”</strong> if you don’t want to create a link</li>
+</ul>
+
+
+<h2>Contributions</h2>
+
+<h3>How do i create a contribution page? <a name=""></a></h3>
+
+<ul>
+<li>find the <strong>“Contributions”</strong> in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>you will see a list of existing contribution pages in the directory to the left</li>
+<li>hit the <strong>“+”</strong> button right above the list of contribution pages in the directory</li>
+<li>a little pop-up window is opening called <strong>“Add a new page”
+</strong></li>
+<li>fill in the title of the contribution page</li>
+<li>click on the fold out menu under <strong>“Template”</strong> and select <strong>“Article (article)”</strong></li>
+<li>hit <strong>“Save”</strong> to continue</li>
+<li>hit <strong>“Cancel”</strong> to cancel the action</li>
+<li>you will see a page with several text boxes</li>
+<li>fill them in according to the descriptions</li>
+<li>fields which are marked with a <strong>“*”</strong> are required to fill in</li>
+<li>hit the <strong>“Save”</strong> button at the end of the page to save the changes</li>
+<li>the contribution is created now</li>
+</ul>
+
+
+<p><strong>TIP: to see how to preview the contribution you created please click <a href="//">here</a></strong></p>
+
+<pre><code>ATTENTION: The contribution you created is not visible on the ISOCARP2105 web page yet. You are only one simple step away. To see how to make the contribution visible on the ISOCARP2105 web page go to page: ...
+</code></pre>
+
+<h3>How do I upload a contribution to a contribution page? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Contributions”</strong> section in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>find the contribution page to which you want to add a contribution to in the directory or create a new one</li>
+<li>on top of the page of your contribution page you see a menu, listing the points: <strong>“Content”</strong>, <strong>“Files”</strong>, <strong>“URL”</strong></li>
+<li>you are currently on the <strong>“Content”</strong> section of the contribution page, <strong>“Content”</strong> is highlighted red</li>
+<li>go to <strong>“Files”</strong></li>
+<li>here you can see contributions which are uploaded already or a note saying: <strong>“No files so far”</strong> in case there are no contributions uploaded</li>
+<li>on the right top of the page there is a button saying <strong>“Upload a new file”</strong></li>
+<li>hit the button to upload a new contribution</li>
+<li>a black pop-up window opens (upload window)</li>
+<li>hit the button <strong>“Choose File”</strong></li>
+<li>another window opens showing the directory of your own computer</li>
+<li>find the contribution you want to upload in your system</li>
+<li>select the contribution and hit <strong>“open”</strong> or double click the file to open</li>
+</ul>
+
+
+<pre><code>ATTENTION: you can only select one file at a time.
+</code></pre>
+
+<ul>
+<li>you are now back in the upload window</li>
+<li>the name of the contribution you want to upload is shown in the bar behind the button <strong>“Choose File”</strong></li>
+<li>hit <strong>“Upload”</strong></li>
+<li>the contribution is now uploaded to the contribution page</li>
+<li>it will show automatically on the webpage in case the contribution page is visible</li>
+</ul>
+
+
+<pre><code>NOTICE: big files and slow internet connections result in longer loading times. Stay patient. The process should not take longer than 2 minutes.
+</code></pre>
+
+<ul>
+<li>after the contribution is uploaded you see a little thumbnail of your file at the file page with the contributions’s name and it’s size</li>
+<li>you can upload documents (word/ PDF/ …)</li>
+</ul>
+
+
+<p><strong>TIP: To see how to create a contribution page, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to change or delete contributions from a talking point, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to preview the contribution page you created, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to sort the list of contribution pages, please click <a href="//">here</a></strong></p>
+
+<h3>What can I upload? <a name=""></a></h3>
+
+<ul>
+<li>you can only upload documents (word/ PDF/ …)</li>
+</ul>
+
+
+<h3>How can I rename, replace or delete contributions? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Contributions”</strong> section in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>go to the <strong>"Files"</strong> section</li>
+<li><p>next to the thumbnail of the file you want to change, you see a little black menu with the buttons: <strong>“Edit”</strong>, <strong>“Replace”</strong>, <strong>“Delete”</strong></p></li>
+<li><p>hit <strong>“Edit”</strong> when you want to change the name of your file</p></li>
+<li>a window opens in which you can change the name of the file</li>
+<li><p>don’t forget to hit <strong>“Save”</strong> in order to apply the change</p></li>
+<li><p>hit <strong>“Replace”</strong> in order to replace a file</p></li>
+<li>a pop-up window opens (upload window)</li>
+<li>follow the instructions to replace the file</li>
+<li>the process is similar to uploading a file <strong>(see page: <a href="//">How to upload a file</a>)
+</strong></li>
+<li>hit <strong>“Delete”</strong> in order to delete a file</li>
+<li>a pop-up window opens</li>
+<li>hit <strong>“Delete”</strong> to confirm deleting the file</li>
+<li>hit <strong>“Cancel”</strong> to stop the process</li>
+</ul>
+
+
+<h3>Can I preview contribution pages before other people see it? <a name=""></a></h3>
+
+<ul>
+<li>it is very simple to preview the changes you have made</li>
+<li>click the little symbol of a <strong>magnifying glass</strong> on the right top side of the contribution page in the panel</li>
+<li>a new tab will open with a preview to the contribution page you created on the ISOCARP2015 web page</li>
+</ul>
+
+
+<h3>How to make a contribution page visible on the ISOCARP2105 web page? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Contributions”</strong> section in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>you will see a list with all existing contribution pages</li>
+<li>they are separated in <strong>“Visible subpages”</strong> and <strong>“Invisible subpages”</strong></li>
+<li>all contribution pages in <strong>“Visible subpages”</strong> are displayed on the ISOCARP2015 web page</li>
+<li>all contribution pages  in <strong>“Invisible subpages”</strong> can’t be viewed by visitors of the web page</li>
+<li>newly created contribution pages are saved under <strong>“Invisible subpages”</strong> and are thus not visible</li>
+<li>to make them visible click the <strong>“Sort”</strong> button on top of the directory</li>
+<li>the icons of the contribution pages in the directory change to a list symbol and the cursor changes to direction arrows when you hover over them</li>
+<li>simply drag the new contribution page into the list of <strong>“Visible subpages”</strong> to make it visible</li>
+<li>drop it in the position you want your contribution page to appear in the list of talking points</li>
+<li>click <strong>“Ok”</strong> to save the changes</li>
+<li>click <strong>“Cancel”</strong> if you don’t want the changes to apply</li>
+</ul>
+
+
+<h3>How to change the order of contribution pages on the webpage? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Contributions”</strong> section in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>you will see a list with all existing contribution pages</li>
+<li>click the <strong>“Sort”</strong> button on top of the directory</li>
+<li>the icons in front of the contribution pages in the directory change to a list symbol and the cursor changes to direction arrows when you hover over them</li>
+<li>simply drag the contribution pages in <strong>“Visible subpages”</strong> into the order you wish for</li>
+<li>click <strong>“Ok”</strong> to save the changes</li>
+<li>click <strong>“Cancel”</strong> if you don’t want the changes to apply</li>
+</ul>
+
+
+<h3>How can I delete a contribution page? <a name=""></a></h3>
+
+<ul>
+<li>go to the <strong>“Contributions”</strong> section in the directory (Home>Theme>Theme Name>Contributions)</li>
+<li>you will see a list with all existing contribution pages</li>
+<li>in front of every contribution page in the list you see a little circle icon with a cross inside</li>
+<li>click the icon of the contribution page you wish to delete</li>
+<li>click <strong>“Delete”</strong> in the pop-up window to confirm the action</li>
+<li>click <strong>“Cancel”</strong> to not delete the contribution page</li>
+</ul>
+
+
+<pre><code>ATTENTION: Do not delete the “Contributions” section on your theme page
+</code></pre>
+
+<h2>Calendar</h2>
+
+<h3>How do I add an event to the calendar? <a name=""></a></h3>
+
+<pre><code>INFO: The system of showing the calendar is based on text styling. There is no need to add extra pages. There is no opportunity to add files.
+</code></pre>
+
+<ul>
+<li>find <strong>“Calendar”</strong> in the directory (Home>Theme>Theme Name>Calendar)</li>
+<li>simply edit the text in the text fields</li>
+<li>there are two columns</li>
+<li>you might have to copy and paste single events from one column to another to create a symmetric appearance of the calendar on the ISOCARP2015 web page</li>
+<li>hit “Save” to apply your changes</li>
+</ul>
+
+
+<p><strong>TIP: To see how the Calendar has to be styled, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to preview your changes, please click <a href="//">here</a></strong></p>
+
+<p><strong>TIP: To see how to stylise text, please click <a href="//">here</a></strong></p>
+
+<h3>What is the structure of the calendar? <a name=""></a></h3>
+
+<p>-</p>
+
+<p><strong>TIP: To see how to stylise text, please click <a href="//">here</a></strong></p>
+
+<h2>Who will be there?</h2>
+
+<h3>How does the “Who will be there?” section work? <a name=""></a></h3>
+
+<pre><code>INFO: The “Who will be there” page shows the names of all people who have signed up to participate or registered to stay updated for one specific theme. Since the registration process is controlled through an external service (MailChimp), the list of participants has to be downloaded from MailChimp and uploaded to the panel of the ISOCARP2015 web page. 
+</code></pre>
+
+<ul>
+<li>the contacts and names on the <strong>“Who will be there?”</strong> page are imported from <strong>MailChimp</strong> by one of the theme administrators</li>
+<li>create and download a <em>.csv file</em> with the list of all a theme’s contacts from <strong>MailChimp</strong> to your computer</li>
+</ul>
+
+
+<p><strong>TIP: To see how to create and download a <em>.csv file</em> from MailChimp, please go to the <a href="//">handbook for external services</a>, at page:…</strong></p>
+
+<ul>
+<li>go to <strong>“Who will be there?”</strong> in the directory (Home>Theme>Theme Name>Who will be there?)</li>
+<li>open the <strong>“File”</strong> section</li>
+<li>click <strong>“Upload a new file”</strong> on the right top of the page</li>
+<li>upload the latest <em>.csv file</em> which was downloaded from <strong>MailChimp</strong></li>
+<li>the <strong>“Who will be there?”</strong> page is now updated</li>
+<li>No further styling has to be done</li>
+</ul>
+
+
+<h2>About</h2>
+
+<h2>Contact</h2>
+
+<h2>Sponsors</h2>
+
+<h2>Word Game</h2>
+
+<h2>Comments</h2>
+</body>
+</html>
