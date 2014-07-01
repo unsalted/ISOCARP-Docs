@@ -28,8 +28,6 @@
 - [How do I add files to a talking point (document, pictures)?](#addfilestp)
 - [Which sort of files can i upload?](#whichfilestp)
 - [How can I rename, replace or delete files?](#editfilestp)
-- [How do I create a slideshow in a talking point?](#slideshowtp)
-- [Tips for creating a slideshow](#tipsslideshowtp)
 - [How do I embed a video into a talking point? (Vimeo)](#embedvideovimeotp)
 - [How do I embed a video into a talking point? (Youtube)](#embedvideoyoutubetp)
 - [What can I upload?](#whattouploadtp)
