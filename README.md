@@ -9,13 +9,13 @@
 
 - [How do I log into the panel/ back end?](#loginpanelg)
 - [How do I find my way in the directory?](#directoryg)
-- [How do I find my way in the directory? How do I navigate in the panel?](#directoryg)
+- [How do I navigate in the panel?](#directoryg)
 - [What can I change?](#whattochangeg)
 - [How do I know which content to fill in where?](#whichcontentg)
 - [How can I change content on the main page?](#changecontentg)
 - [How can I add a theme?](#addthemeg)
 - [Do i have to define type sizes and fonts?](#typeg)
-- [What is the URL page for?](#URL)
+- [What is the URL tab for?](#URL)
 
 
 ####Basic Rules
@@ -196,7 +196,7 @@
 ***
 
 
-### Do i have to define type sizes and fonts? <a name="typeg"></a>
+### Do I have to define type sizes and fonts? <a name="typeg"></a>
 
 - no
 - you don’t have to make any decisions about the type size or the font
@@ -207,7 +207,7 @@
 
 ***
 
-### What is the URL page for? <a name="URL"></a>
+### What is the URL tab for? <a name="URL"></a>
 
 - each page has an URL section next to the content and files sections
 - here you can see which URL your page/article/talking point will be assigned to
@@ -218,7 +218,7 @@
 
 ***
 
-##Basic Rules
+## Basic Rules
 
 
 ### Basic Rules <a name="basicrulesg"></a>
@@ -231,7 +231,7 @@
 ***
 
 
-##Talking Points
+## Talking Points
 
 
 
@@ -335,11 +335,9 @@ NOTICE: big files and slow internet connections result in longer loading times. 
 ### How can I rename, replace or delete files? <a name="editfilestp"></a>
 
 - next to the thumbnail of the file you want to change, you see a little black menu with the buttons: **“Edit”**, **“Replace”**, **“Delete”** **(1)**
-
 - hit **“Edit”** when you want to change the name of your file
 - a window opens in which you can change the name of the file 
 - don’t forget to hit **“Save”** in the window in order to apply the change
-
 - hit **“Replace”** in order to replace a file
 - a window opens (upload window) 
 - follow the instructions to replace the file
@@ -592,7 +590,7 @@ NOTE: Whatever you write behind "text:" appears in your text as link.
 ***
 
 
-##Contributions
+## Contributions
 
 
 
@@ -702,11 +700,9 @@ NOTICE: big files and slow internet connections result in longer loading times. 
 - find the contribution page in which you want to edit a contribution **(1)**
 - go to the **"Files"** section **(2)**
 - next to the thumbnail of the file you want to change, you see a little black menu with the buttons: **“Edit”**, **“Replace”**, **“Delete”** **(3)**
-
 - hit **“Edit”** when you want to change the name of your file
 - a window opens in which you can change the name of the file
 - don’t forget to hit **“Save”** in order to apply the change
-
 - hit **“Replace”** in order to replace a file
 - a pop-up window opens (upload window)
 - follow the instructions to replace the file
@@ -820,7 +816,7 @@ NOTICE: big files and slow internet connections result in longer loading times. 
 
 
 
-##Calendar
+## Calendar
 
 
 
@@ -886,7 +882,7 @@ NOTE: Header styles are applied to all words which follow until the next line br
 ***
 
 
-##Who will be there?
+## Who will be there?
 
 
 
@@ -919,10 +915,10 @@ INFO: The “Who will be there” page shows the names of all people who have si
 
 
 
-##About
+## About
 
 
-###How do I create an “About” section? <a name="createas"></a>
+### How do I create an “About” section? <a name="createas"></a>
 
 ```
 INFO: The system of showing the “About” is based on creating subpages. Each part of the section is a new subpage (e.g. information about the host/ location/ history). Text styling can be applied anyways. There is no opportunity to add files.
@@ -958,7 +954,7 @@ INFO: The system of showing the “About” is based on creating subpages. Each 
 
 ***
 
-###Can I add pictures to the “About” sections? <a name="addpicturesas"></a>
+### Can I add pictures to the “About” sections? <a name="addpicturesas"></a>
 
 ```
 INFO: The system of showing the “About” is based on creating subpages. Each part of the section is a new subpage (e.g. information about the host/ location/ history). Text styling can be applied anyways. There is no opportunity to add files.
@@ -981,7 +977,7 @@ INFO: The system of showing the “Contact” is based on text styling. There is
 
 ***
 
-###Can I add pictures to the “Contact” sections? <a name="addpicturescontact"></a>
+### Can I add pictures to the “Contact” sections? <a name="addpicturescontact"></a>
 
 ```
 INFO: The system of showing the “Contact” is based on text styling. There is no need to add extra subpages. There is no opportunity to add files.
@@ -991,7 +987,7 @@ INFO: The system of showing the “Contact” is based on text styling. There is
 
 ***
 
-##Comments
+## Comments
 
 
 ###How does the “Comments” section work? <a name="comments"></a>
@@ -1014,7 +1010,7 @@ NOTE: To delete, feature or moderate comments and discussion, you have to be a m
 
 ***
 
-###How can I sign up to *Disqus*? <a name="signupdisqusco"></a>
+### How can I sign up to *Disqus*? <a name="signupdisqusco"></a>
 
 
 - click the **“Login”** button on top right of every comment section **(1)**
@@ -1038,7 +1034,7 @@ NOTE: To delete, feature or moderate comments and discussion, you have to be a m
 
 ***
 
-###How can I comment when I am logged in to *Disqus*? <a name="commentlogindisqusco"></a>
+### How can I comment when I am logged in to *Disqus*? <a name="commentlogindisqusco"></a>
 
 
 - click in the **text field** on top of every comment section and fill in your text **(1)**
@@ -1054,7 +1050,7 @@ NOTE: To delete, feature or moderate comments and discussion, you have to be a m
 
 ***
 
-###How can I comment when I don’t have a Disqus account? <a name="commentnoaccountdisqusco"></a>
+### How can I comment when I don’t have a Disqus account? <a name="commentnoaccountdisqusco"></a>
 
 
 - click in the **text field** on top of every comment section and fill in your text **(1)**
@@ -1081,7 +1077,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###How can I reply to comments when I am logged in to Disqus? <a name="replylogindisqusco"></a>
+### How can I reply to comments when I am logged in to Disqus? <a name="replylogindisqusco"></a>
 
 - click the **"reply"** button you can find under every comment
 - type your text into the appearing text field
@@ -1092,7 +1088,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###How can I reply to comments when I don’t have a *Disqus* account? <a name="replynoaccountdisqusco"></a>
+### How can I reply to comments when I don’t have a *Disqus* account? <a name="replynoaccountdisqusco"></a>
 
 - click the **"reply"** button you can find under every comment
 - type your text into the appearing text field
@@ -1120,7 +1116,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###How can I delete inappropriate comments? <a name="deletecommentsco"></a>
+### How can I delete inappropriate comments? <a name="deletecommentsco"></a>
 
 ```
 NOTE: To delete, feature or moderate comments/ replies and discussion, you have to be a moderator. In order to become a moderator, you have to be invited be another *Disqus* user with the state of a moderator (Theme administrator/ Master administrator).
@@ -1132,7 +1128,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###How can I integrate interesting comments in the “Talking Points”? <a name="integratecommentsco"></a>
+### How can I integrate interesting comments in the “Talking Points”? <a name="integratecommentsco"></a>
 
 - you can share  comments/discussions on *Facebook* or *Twitter*
 - click on the **"Share"** button on the top right of every discussion
@@ -1144,7 +1140,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###How can I share a comment/ discussion? <a name="sharecommentsco"></a>
+### How can I share a comment/ discussion? <a name="sharecommentsco"></a>
 
 - you can share  comments/discussions on *Facebook* or *Twitter*
 - click on the **"Share"** button on the top right of every discussion
@@ -1153,10 +1149,10 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 ***
 
 
-##Vocabulary
+## Vocabulary
 
 
-###URL
+### URL
 
 
 - A **URL** (also known as web address, particularly when used with HTTP), is a specific character string that directs users to particular webpages. 
@@ -1165,7 +1161,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###link
+### link
 
 
 - A **link** is a button or a highlighted piece of text on a webpage, that leads *users* to a different webpage.
@@ -1173,14 +1169,14 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###user
+### user
 
 
 - A **user** is a person visiting a webpage.
 
 ***
 
-###backend <a name="backend"></a>
+### backend <a name="backend"></a>
 
 - The **backend** is the platform where all the content for the *ISOCARP2015 webpage* is filled in.
 - All the content will be stylized by a program to fit the content to the appeareance of the section on the webpage it is uploaded to.
@@ -1188,7 +1184,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###master administrator <a name="masteradministrator"></a>
+### master administrator <a name="masteradministrator"></a>
 
 - The **master administrator** controls all the content of the *main page* on the *ISOCARP2015 webpage*.
 - The access to the master page is restricted to a password authentification.
@@ -1196,7 +1192,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###theme administrator <a name="themeadministrator"></a>
+### theme administrator <a name="themeadministrator"></a>
 
 - **Theme administrators** control the content on the *theme page* they are assigned to.
 - The access to the specific *theme pages* is restricted to a specific password authentification.
@@ -1204,7 +1200,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###directory <a name="directory"></a>
+### directory <a name="directory"></a>
 
 - The **directory** is the menu on the left side of the *backend*.
 - The **directory** is organized in a folder structure which ressembles the hierarchy of the webpage.
@@ -1213,7 +1209,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###panel <a name="panel"></a>
+### panel <a name="panel"></a>
 
 - The **panel** is the platform where all the content for the *ISOCARP2015 webpage* is filled in.
 - All the content will be stylized by a program to fit the content to the appeareance of the section it is uploaded to.
@@ -1221,7 +1217,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###subpage <a name="subpage"></a>
+### subpage <a name="subpage"></a>
 
 
 - A **subpage** is a folder in the directory of the *backend* which contains other *subpages* or *articles*.
@@ -1229,7 +1225,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###article <a name="article"></a>
+### article <a name="article"></a>
 
 
 - An **article** is a piece of content (a news article, talking point or contribution).
@@ -1240,14 +1236,14 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###hyperlink <a name="hyperlink"></a>
+### hyperlink <a name="hyperlink"></a>
 
 - A **hyperlink** is the same as a *link*.
 - Click [here](#link) to see what a *link* is.
 
 ***
 
-###talking point <a name="talkingpoint"></a>
+### talking point <a name="talkingpoint"></a>
 
 
 - **Talking points** are a collection of different sorts of information posted and edited by the *administrators*.
@@ -1257,7 +1253,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###contribution <a name="contribution"></a>
+### contribution <a name="contribution"></a>
 
 
 - **Contributions** are files or texts which are send to the *administrators* by *users*, to contribute to the discussion around a theme.
@@ -1265,7 +1261,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###contribution page <a name="contribution"></a>
+### contribution page <a name="contribution"></a>
 
 
 - **Contribution pages** are a collection of *articles* posted and edited by the *administrators* to present contributions posted by the *users*.
@@ -1274,7 +1270,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###excerpt <a name="excerpt"></a>
+### excerpt <a name="excerpt"></a>
 
 
 - An **excerpt** is a short piece of text representing a longer piece of text.
@@ -1283,7 +1279,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###visible/ invisible subpages <a name="subpages"></a>
+### visible/ invisible subpages <a name="subpages"></a>
 
 
 - **Invisible subpages** are pages which you can find in the *directory* but are not visible on the *ISOCARP2015 webpage.*
@@ -1294,14 +1290,14 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###fold out menu <a name="foldoutmenu"></a>
+### fold out menu <a name="foldoutmenu"></a>
 
 
 - A **fold out menu** is a small menu which opens up underneath a text field to give you specific options whilst filling in/generating specific information.
 
 ***
 
-###pop-up window <a name="popupwindow"></a>
+### pop-up window <a name="popupwindow"></a>
 
 
 - A **pop-up window** is a small window which opens up in a on top of the webpage.
@@ -1309,7 +1305,7 @@ NOTE: To delete, feature or moderate comments/ replies and discussion, you have 
 
 ***
 
-###embed-link <a name="embedlink"></a>
+### embed-link <a name="embedlink"></a>
 
 
 - An **embed-link** is a *link* which is generated by video platforms, directing to a video you want to share on your webpage.
